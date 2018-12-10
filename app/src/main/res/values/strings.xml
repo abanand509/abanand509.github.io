@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ElanicAnandAb</string>
+
+    <!-- Strings for QuestionSearchActivity-->
+    <string name="no_content_toast">No content available </string>
+    <string name="no_internet_connection">Not connected to Internet</string>
+    <string name="network_error">Something went wrong… Error message:</string>
+    <string name="string_joint">%s%s</string>
+    <string name="empty" />
+
+    <!-- Strings for questions list items-->
+    <string name="text_owner_image">Owner Image</string>
+    <string name="text_title">Title</string>
+    <string name="text_username">Username</string>
+    <string name="text_question_detail">Question Detail</string>
+</resources>

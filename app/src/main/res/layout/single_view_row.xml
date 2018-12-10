@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- Image of Owner-->
+
+        <ImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:contentDescription="@string/text_owner_image" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Text Question Title -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:text="@string/text_title"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:paddingStart="@dimen/tv_padding"/>
+
+            <TextView
+                android:id="@+id/tv_question_title"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                android:padding="@dimen/tv_padding"/>
+
+            <!-- Text User Name -->
+
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_username"
+                android:paddingStart="@dimen/tv_padding"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="@dimen/tv_padding" />
+
+            <!-- Text Question Detail -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="@string/text_question_detail"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:ellipsize="end"
+                android:paddingStart="@dimen/tv_padding"/>
+
+            <TextView
+                android:id="@+id/tv_question_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:padding="@dimen/tv_padding"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
